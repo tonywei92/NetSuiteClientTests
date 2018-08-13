@@ -11,7 +11,11 @@
     "ns-item-rand": "cross-env REQ_MODE=itemRand babel-node ./index.js",
     "ns-vendor-rand": "cross-env REQ_MODE=vendorRand babel-node ./index.js",
     "ns-customer-rand": "cross-env REQ_MODE=customerRand babel-node ./index.js",
-    "ns-brand-rand": "cross-env REQ_MODE=brandRand babel-node ./index.js"
+    "ns-brand-rand": "cross-env REQ_MODE=brandRand babel-node ./index.js",
+    "ns-raw-brand": "cross-env REQ_MODE=brand babel-node ./raw.js",
+    "ns-raw-vendor": "cross-env REQ_MODE=vendor babel-node ./raw.js",
+    "ns-raw-item": "cross-env REQ_MODE=item babel-node ./raw.js",
+    "ns-raw-customer": "cross-env REQ_MODE=customer babel-node ./raw.js"
   },
   "keywords": [],
   "author": "",

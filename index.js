@@ -36,6 +36,7 @@ let scripts = {
     brandRand,
 };
 
+
 function item(){
     let ids = argument.split(',');
     ids.forEach( (item,index) =>{
