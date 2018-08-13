@@ -1,0 +1,32 @@
+{
+  "name": "NetSuiteTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ns-item": "cross-env REQ_MODE=item babel-node ./index.js",
+    "ns-vendor": "cross-env REQ_MODE=vendor babel-node ./index.js",
+    "ns-customer": "cross-env REQ_MODE=customer babel-node ./index.js",
+    "ns-brand": "cross-env REQ_MODE=brand babel-node ./index.js",
+    "ns-item-rand": "cross-env REQ_MODE=itemRand babel-node ./index.js",
+    "ns-vendor-rand": "cross-env REQ_MODE=vendorRand babel-node ./index.js",
+    "ns-customer-rand": "cross-env REQ_MODE=customerRand babel-node ./index.js",
+    "ns-brand-rand": "cross-env REQ_MODE=brandRand babel-node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.10",
+    "mysql2": "^1.5.3",
+    "objection": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
