@@ -36,7 +36,7 @@ async function raw(param, query){
     //     })
     // });
 
-    for(let i = 0; i<coll.length-1;i++){
+    for(let i = 0; i<coll.length;i++){
         // console.log(element);
         await sleep(500);
         console.log(coll[i].id);
