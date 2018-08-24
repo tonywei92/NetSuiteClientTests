@@ -34,6 +34,7 @@ let scripts = {
     vendorRand,
     customerRand,
     brandRand,
+    order
 };
 
 
@@ -63,6 +64,13 @@ function brand(){
     let ids = argument.split(',');
     ids.forEach( (item,index) =>{
         sendBrand(item);
+    });
+}
+
+function order(){
+    let ids = argument.split(',');
+    ids.forEach( (item,index) =>{
+        sendOrder(item);
     });
 }
 
@@ -98,6 +106,11 @@ function sendCustomer(id){
 function sendBrand(id){
 
     sendRequest('brand', {id: id});
+}
+
+function sendOrder(id){
+
+    sendRequest('order', {id: id});
 }
 
 function vendorExists($boboId){

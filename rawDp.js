@@ -42,14 +42,14 @@ require('dotenv').config();
       // });
   
         console.log(coll);
-        let data = {};
+        let dataToSend = {};
 
       for(let i = 0; i<coll.length;i++){
     
     
         switch (reqMode){
             case 'product':
-                data = {
+                dataToSend = {
                     user_id: 1,
                     products: [coll[i].id]
                 };
@@ -57,14 +57,14 @@ require('dotenv').config();
                 
                 break;
             case 'customer':
-                data ={
+                dataToSend ={
                     users: [
                         coll[i].id
                     ]
                 };
                 break;
             case 'promo':
-                data = {
+                dataToSend = {
                     user_id: 1,
                     status: 'add',
                     promos: [coll[i].id]
@@ -75,7 +75,7 @@ require('dotenv').config();
           // console.log(element);
           await sleep(500);
           console.log(coll[i].id);
-          await axios.post(reqMode,data).then(async response =>{
+          await axios.post(reqMode,dataToSend).then(async response =>{
               console.log(response.data + ' - OK');
               if(reqMode=='product'){
                 await sendSkus(coll[i].id)

@@ -14,11 +14,14 @@
     "ns-vendor": "cross-env REQ_MODE=vendor babel-node ./index.js",
     "ns-customer": "cross-env REQ_MODE=customer babel-node ./index.js",
     "ns-brand": "cross-env REQ_MODE=brand babel-node ./index.js",
-   
+    "ns-order": "cross-env REQ_MODE=order babel-node ./index.js",
+
+    
     "ns-raw-brand": "cross-env REQ_MODE=brand babel-node ./raw.js",
     "ns-raw-vendor": "cross-env REQ_MODE=vendor babel-node ./raw.js",
     "ns-raw-item": "cross-env REQ_MODE=item babel-node ./raw.js",
     "ns-raw-customer": "cross-env REQ_MODE=customer babel-node ./raw.js",
+    "ns-raw-order": "cross-env REQ_MODE=order babel-node ./raw.js",
 
     "dp-product": "cross-env REQ_MODE=product babel-node ./indexDp.js",
     "dp-customer": "cross-env REQ_MODE=customer babel-node ./indexDp.js",
