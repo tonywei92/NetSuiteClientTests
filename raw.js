@@ -49,7 +49,7 @@ async function raw(param, query){
         })
     };
 
-    await Promise.all(promisearr);
+    //await Promise.all(promisearr);
     process.exit();process.exit(0);
 }
 
