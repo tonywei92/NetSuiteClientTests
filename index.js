@@ -122,7 +122,7 @@ function sendOrder(id){
     sendRequest('order', {id: id});
 }
 
-function sendOrder(id){
+function sendRma(id){
 
     sendRequest('rma', {id: id});
 }
