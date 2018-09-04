@@ -39,7 +39,7 @@ async function raw(param, query){
     for(let i = 0; i<coll.length;i++){
         // console.log(element);
         await sleep(500);
-        console.log(coll[i].id);
+        console.log(reqMode, coll[i].id, {id: coll[i].id});
         await axios.post(reqMode,{id: coll[i].id}).then(response =>{
             console.log(response.data + ' - OK');
             return response;
